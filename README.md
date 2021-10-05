@@ -25,6 +25,11 @@ $ npm install
 $ npm run start # this will make webpack watching for your changes in code
 ```
 
+### Open page in browser
+```bash
+$ npx webpack server
+```
+
 
 ## Built With
 
