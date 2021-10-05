@@ -34,9 +34,10 @@ h1 {
 }
 
 .list-header {
-  display: flex; 
+  display: flex;
   margin: 8px;
 }
+
 .ul {
   list-style: none;
   border: 2px solid #333;
