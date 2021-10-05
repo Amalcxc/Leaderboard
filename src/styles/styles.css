@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace, sans-serif;
+  font-size: 10px;
+}
+
+header {
+  text-align: right;
+  width: 90%;
+  max-width: 720px;
+  margin: 9px auto 30px auto;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 23px;
+}
+
+.btn {
+  border: 2px solid;
+  margin-left: 80px;
+}
+
+.list-header {
+  display: flex; 
+  margin: 8px;
+}
+.ul {
+  list-style: none;
+  border: 2px solid #333;
+  width: 50%;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+}
+
+.list-item:nth-child(odd) {
+  background: #ddd;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  margin-top: 12px;
+}
+
+.form input[type="text"] {
+  border: 3px solid #333;
+  padding: 6px;
+  margin-bottom: 30px;
+}
+
+.form input[type="submit"] {
+  align-self: flex-end;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 2px 2px #333;
+  cursor: pointer;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+  padding: 3px 6px;
+  margin-right: 2px;
+  transition: all 100ms ease;
+}
+
+.form input[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
