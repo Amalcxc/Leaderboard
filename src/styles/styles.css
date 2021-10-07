@@ -69,6 +69,12 @@ h1 {
   margin-bottom: 30px;
 }
 
+.form input[type="number"] {
+  border: 3px solid #333;
+  padding: 6px;
+  margin-bottom: 30px;
+}
+
 .form input[type="submit"] {
   align-self: flex-end;
   background: #fff;
