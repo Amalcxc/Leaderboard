@@ -31,16 +31,8 @@ $ npx webpack server
 ```
 
 
-## Built With
 
-- HTML
-- JavaScript
-- BootStrap
-
-
-# Author
-
-## 👤 Author
+# 👤 Author
 
 - GitHub: [Amal Hersi](https://github.com/Amalcxc)
 - Twitter: [@Amalcx4](https://twitter.com/home?lang=en)
