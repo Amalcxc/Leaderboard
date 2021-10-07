@@ -5,28 +5,15 @@ import 'regenerator-runtime/runtime'
 
 const base_url = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QWe6fd15ksAlBbepEHeq/scores/"
 
-// fetch(base_url, {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ 
-// 	    "name": "new game" 
-// }),
-//     }).then((res) => res.json())
-//     .then((data) => {
-//       console.log(data);
-//     });
-
-
-const refresh = document.querySelector("#Refresh")
-const lu = document.querySelector(".ul")
+const refresh = document.querySelector("#refresh")
+const ul = document.querySelector(".ul")
 
 
 
 let array_of_scores = []
 
 async function getscores() {
+    ul.innerHTML = '';
     let response = await fetch(base_url);
     let data = await response.json();
     array_of_scores = data.result;
@@ -36,11 +23,11 @@ async function getscores() {
       const li = document.createElement('li');
       li.innerHTML = `${score.user}: ${score.score}`;
       li.className = 'list_item';
-      lu.append(li);
+      ul.append(li);
     });
 }
 
-
+refresh.addEventListener('click', getscores)
 
 
 const username = document.querySelector("#username")
